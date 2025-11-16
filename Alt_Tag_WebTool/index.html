@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Alt Tag Generator</title>
+        <meta name="description" content="An experiment on AI Alt Tag generator">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav> 
+            <a href="index.html" class="logo-link" aria-label="Image SEO Checker Home">
+                <img src="images/logo.png" alt="Image SEO Checker">
+            </a>
+            </nav>
+        </header>
+         <!-- End of desktop navigation menu -->
+        
+        <main>
+        
+            <!-- Hero section starts -->
+            <section class="hero-section">
+                <div class="wrapper">
+                
+                    <h1>Optimize Image SEO with <span class="colored">AI</span></h1>
+                
+                <!-- Hero left begins -->
+                 <div class="hero-content">
+                <div class="hero-left">
+                <!-- Upload Box -->
+                <div class="upload-box">
+    <input type="file" id="imageInput" accept="image/*" hidden />
+
+    <label for="imageInput" class="upload-area">
+
+        <!-- Preview Image -->
+        <img id="imagePreview" class="image-preview" alt="Preview" />
+
+        <img src="images/image_upload.png" alt="" class="upload-image-icon" />
+        <p><span class="upload-link"><a href="#">Click to upload</a></span> or drag & drop</p>
+        <span class="upload-note">PNG, JPG/JPEG, GIF, WebP (max 10 MB)</span>
+    </label>
+</div>
+
+
+                 <!-- Button -->
+                <button type="button" class="generate-btn" aria-label="Generate ALT text">Generate ALT Text</button>
+                </div>
+                <!-- Hero left ends -->
+
+                 <!-- Hero right begins -->
+                  <div class="hero-right">
+                    
+                    <div class="output-boxes">
+                    <!-- ALT Text Box -->
+                        <div class="alt-output output-box">
+                            <div class="output-header">
+                                <span>ALT Text</span>
+                                <button class="copy-btn" id="copyAlt" aria-label="Copy alt text">
+                                <img src="images/copy.svg" alt="">
+                                </button>
+                            </div>
+                            <p id="altTextOutput" class="output-placeholder">
+                            Your image ALT Text will appear here.
+                            </p>
+                        </div>
+
+                    <!-- Caption Box -->
+                        <div class="caption-output output-box">
+                            <div class="output-header">
+                                <span>Caption</span>
+                                <button class="copy-btn" id="copyCaption" aria-label="Copy caption text">
+                                <img src="images/copy.svg" alt="">
+                                </button>
+                            </div>
+                            <p id="captionOutput" class="output-placeholder">
+                            Your image caption will appear here.
+                            </p>
+                        </div>
+
+                    <!-- File Name Box -->
+                        <div class="filename-output output-box">
+                            <div class="output-header">
+                                <span>File Name</span>
+                                <button class="copy-btn" id="copyFilename" aria-label="Copy file name text">
+                                <img src="images/copy.svg" alt="">
+                                </button>
+                             </div>
+                            <p id="filenameOutput" class="output-placeholder">
+                            Your image file name will appear here.
+                            </p>
+                        </div>
+                        
+                     </div>
+                    </div>
+                  <!-- Hero right ends -->
+                   </div>
+                </div>
+                </section>
+         
+         
+        
+         <!-- Hero section ends -->
+
+         <!-- Tutorial Section starts  -->
+        
+            <section class="tutorial-section">
+                <div class="wrapper">
+                <h2>How to Make Your Image SEO Friendly?</h2>
+                <div class="tutorial-content">
+                <div class="tutorial-left">
+                    <div class="bullet">
+                        <h3 class="pointer">1. Input</h3>
+                        <p class="description">Select and upload your image. You can optionally add a keyword for better optimization.</p>
+                    </div>
+
+                    <div class="bullet">
+                        <h3 class="pointer">2. Output</h3>
+                        <p class="description">Receive AI-generated alt text, title, caption, and file name tailored for SEO performance.</p>
+                    </div>
+
+                    <div class="bullet">
+                        <h3 class="pointer">3. Apply</h3>
+                        <p class="description">Add the outputs into your CMS image settings or HTML img tag attributes for better visibility.</p>
+                    </div>
+                </div>
+
+                <div class="tutorial-right">
+                    <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/bfThiqDd9FA?si=1CMNk9bdtQilaEo1&controls=1&modestbranding=1&rel=0"
+                        title="Real Moon Crash"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                </div>
+                </div>
+                </div>
+            </section>
+       
+        <!-- Tutorial Section ends  -->
+         
+ 
+        <!-- FAQs Section starts -->
+         
+            <section class="faq-section">
+    <div class="wrapper">
+        <h2>FAQs on SEO Optimization of Images</h2>
+
+        <div class="all-faqs">
+            <details class="faq">
+                <summary class="question">What is SEO?</summary>
+                <p class="answer">
+                    Search engine optimization is the process of improving the quality and quantity 
+                    of website traffic to a website or a web page from search engines. SEO targets 
+                    unpaid search traffic rather than direct traffic, referral traffic, 
+                    social media traffic, or paid traffic.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary class="question">How does alt text help SEO?</summary>
+                <p class="answer">
+                    Alt text helps search engines understand image content. It improves accessibility, 
+                    relevance, and can boost image search rankings.
+                </p>
+            </details>
+
+            <details class="faq">
+                <summary class="question">How do I name image files for SEO?</summary>
+                <p class="answer">
+                    Use descriptive, keyword-rich, lowercase file names separated by hyphens.  
+                    Example: “golden-retriever-dog-running.jpg”.
+                </p>
+            </details>
+        </div>
+    </div>
+</section>
+                 
+        <!-- FAQs Section ends -->
+        </main>
+        <!-- Main Section ends -->    
+
+
+
+        <!-- Footer Section begins -->
+            <footer>
+                <div class="footer-left">
+                    "SEO is baked; not slapped on like icing on a cake."
+                </div>
+
+                <div class="footer-center">
+                    <a href="https://linkedin.com/in/mayankbishwas" target="_blank">
+                    <img src="images/linkedin_white.svg" alt="LinkedIn" class="footer-linkedin">
+                    </a>
+                </div>
+
+                <div class="footer-right">
+                    <a href="about.html">About Us</a>
+                    <a href="mailto:mayankbishwas@gmail.com">Contact Us</a>
+                </div>
+            </footer>
+
+       <!-- Footer Section ends -->
+
+       <!-- Mobile Warning -->
+             <div class="mobile-warning">
+              <div class="mobile-warning-box">
+                 <h2>🖥️ Open on Desktop!</h2>
+                 <p>Sorry, currently our web tool does not support mobile access; it works only on desktop.</p>
+                 <p>But we're working on it, so do keep an eye out 🙂</p>
+                 <p><a href="https://tinyurl.com/MayankBishwas">Image SEO Checker ⩉ </a></p>
+             </div>
+            </div>
+    </body>
+</html>
